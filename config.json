@@ -1,0 +1,63 @@
+{
+    "window": {
+        "width": 60,
+        "height": 31
+    },
+    "field": {
+        "double_width": true,
+        "width": 30,
+        "height": 30,
+        "empty": {
+            "char": " ",
+            "fore_color": "WHITE",
+            "back_color": "BLUE"
+        },
+        "food": {
+            "char": " ",
+            "fore_color": "WHITE",
+            "back_color": "BRIGHT_RED"
+        },
+        "border": {
+            "horizontal": {
+                "char": "-",
+                "fore_color": "WHITE",
+                "back_color": "BLACK"
+            },
+            "vertical": {
+                "char": "|",
+                "fore_color": "WHITE",
+                "back_color": "BLACK"
+            },
+            "corner": {
+                "char": "+",
+                "fore_color": "WHITE",
+                "back_color": "BLACK"
+            }
+        }
+    },
+    "snake": {
+        "length": 5,
+        "direction": "RIGHT",
+        "speed": 10,
+        "walls_kill": true,
+        "pos": {
+            "x": 5,
+            "y": 5
+        },
+        "head": {
+            "char": " ",
+            "fore_color": "WHITE",
+            "back_color": "BRIGHT_GREEN"
+        },
+        "body": {
+            "char": " ",
+            "fore_color": "WHITE",
+            "back_color": "BRIGHT_GREEN"
+        },
+        "tail": {
+            "char": " ",
+            "fore_color": "WHITE",
+            "back_color": "BRIGHT_GREEN"
+        }
+    }
+}
