@@ -218,7 +218,7 @@ class Game:
         terminal.clear_screen()
         self.running = False
 
-    def add_string(self, pos: tuple[int], string: str):
+    def add_string(self, pos: tuple[int, int], string: str):
         cursor.set_position(*pos)
         print(string, end='')
 
