@@ -1,68 +1,49 @@
 {
     "keybinds": {
-        "up": ["W", "H"],
-        "down": ["S", "P"],
-        "right": ["D", "M"],
-        "left": ["A", "K"],
-        "pause": [" "],
-        "exit": ["\u001b"]
+        "w": "up",
+        "s": "down",
+        "d": "right",
+        "a": "left",
+        " ": "pause",
+        "\u001b": "exit"
     },
     "field": {
         "width": 20,
         "height": 20,
-        "scaling": 2,
-        "enable_border": false,
         "empty": {
             "char": " ",
-            "fore_color": "WHITE",
-            "back_color": "BLACK"
+            "fore_color": "white",
+            "back_color": "black"
         },
         "food": {
             "char": " ",
-            "fore_color": "BLACK",
-            "back_color": "BRIGHT_RED"
-        },
-        "border": {
-            "horizontal": {
-                "char": "-",
-                "fore_color": "WHITE",
-                "back_color": "BLACK"
-            },
-            "vertical": {
-                "char": "|",
-                "fore_color": "WHITE",
-                "back_color": "BLACK"
-            },
-            "corner": {
-                "char": "0",
-                "fore_color": "WHITE",
-                "back_color": "BLACK"
-            }
+            "fore_color": "black",
+            "back_color": "bright_red"
         }
     },
     "snake": {
-        "length": 5,
-        "direction": "R",
         "speed": 7,
         "walls_kill": false,
-        "pos": {
+        "start_length": 5,
+        "start_direction": "right",
+        "start_pos": {
             "x": 0,
             "y": 0
         },
         "head": {
             "char": " ",
-            "fore_color": "WHITE",
-            "back_color": "BRIGHT_YELLOW"
+            "fore_color": "white",
+            "back_color": "bright_yellow"
         },
         "body": {
             "char": " ",
-            "fore_color": "WHITE",
-            "back_color": "BRIGHT_GREEN"
+            "fore_color": "white",
+            "back_color": "bright_green"
         },
         "tail": {
             "char": " ",
-            "fore_color": "WHITE",
-            "back_color": "BRIGHT_GREEN"
+            "fore_color": "white",
+            "back_color": "bright_green"
         }
     }
 }
