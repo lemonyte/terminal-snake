@@ -1,49 +1,9 @@
 {
-    "keybinds": {
-        "w": "up",
-        "s": "down",
-        "d": "right",
-        "a": "left",
-        " ": "pause",
-        "\u001b": "exit"
-    },
-    "field": {
-        "width": 20,
-        "height": 20,
-        "empty": {
-            "char": " ",
-            "fore_color": "white",
-            "back_color": "black"
-        },
-        "food": {
-            "char": " ",
-            "fore_color": "black",
-            "back_color": "bright_red"
-        }
-    },
-    "snake": {
-        "speed": 7,
-        "walls_kill": false,
-        "start_length": 5,
-        "start_direction": "right",
-        "start_pos": {
-            "x": 0,
-            "y": 0
-        },
-        "head": {
-            "char": " ",
-            "fore_color": "white",
-            "back_color": "bright_yellow"
-        },
-        "body": {
-            "char": " ",
-            "fore_color": "white",
-            "back_color": "bright_green"
-        },
-        "tail": {
-            "char": " ",
-            "fore_color": "white",
-            "back_color": "bright_green"
-        }
+    "snake_speed": 50,
+    "loop": true,
+    "colors": {
+        "empty": "black",
+        "food": "bright_red",
+        "snake": "bright_green"
     }
 }
