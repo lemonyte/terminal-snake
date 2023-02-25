@@ -2,7 +2,7 @@
 
 The classic Snake game, in your terminal.
 
-![Screenshot 2023-02-22 233604](https://user-images.githubusercontent.com/49930425/220823010-501ac047-e6de-40cd-b0ef-8ea8f13a8272.png)
+![Screenshot](https://user-images.githubusercontent.com/49930425/220823010-501ac047-e6de-40cd-b0ef-8ea8f13a8272.png)
 
 ## Requirements
 
