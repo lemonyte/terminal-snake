@@ -53,7 +53,7 @@ class AutoSnake(Game):
             event = Event.UP
         event = event or direction
         if self.check_move(event) < 1:
-            return max([Event.UP, Event.DOWN, Event.LEFT, Event.RIGHT], key=self.check_move)
+            return max(DIRECTIONS, key=self.check_move)
         return event
 
 
