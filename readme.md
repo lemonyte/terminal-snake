@@ -54,6 +54,15 @@ Contributions are welcome!
 
 If you have an implementation for the [CPU snake player](src/snake/auto.py) that can achieve a higher score or win the game, please do open an issue or pull request.
 
+## Removed features
+
+The previous version of this game had a number of features that were removed due to implementation complexity.
+They may be added back later.
+
+- Looping through walls
+- Configurable colors
+- Snake speed based on length
+
 ## License
 
 [MIT License](license.txt)
