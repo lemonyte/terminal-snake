@@ -73,7 +73,6 @@ class Snake:
     def grow(self, point: Point, /) -> None:
         self.length += 1
         self.points.insert(0, point)
-        self.speed *= 1.2
         terminal.set_window_title(f"Terminal Snake - Score: {self.length}")
 
     def move(self) -> None:
