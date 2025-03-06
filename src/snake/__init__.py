@@ -120,8 +120,8 @@ class Stage:
 
     def reset(self) -> None:
         cursor.set_position(1, 1)
-        for _ in range(0, self.height, 2):
-            print(f"{self.color_code(Color.EMPTY, (0, 0))}{self.color_code(Color.EMPTY, (0, 1))}{'▀' * self.width}")
+        sys.stdout.write(self.color_code(Color.EMPTY, (0, 0)) + self.color_code(Color.EMPTY, (0, 1)))
+        sys.stdout.write(("▀" * self.width + "\n") * (self.height // 2))
         self.create_food()
         self.snake.reset()
 
@@ -200,7 +200,8 @@ class Game:
 
     def draw(self, string: str, /, *, x: int = 1, y: int = 1) -> None:
         cursor.set_position(x, y)
-        print(string, end="", flush=True)
+        sys.stdout.write(string)
+        sys.stdout.flush()
 
     def reset(self) -> None:
         self.stage.update_size()
