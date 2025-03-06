@@ -30,7 +30,7 @@ class Color(Enum):
 
 class Snake:
     def __init__(self, *, length: int = 3, speed: int = 20) -> None:
-        self.speed = self.initial_speed = speed
+        self.speed = speed
         self.length = length
         self.direction = Event.RIGHT
         self.is_alive = True
@@ -54,7 +54,6 @@ class Snake:
         self.points[0] = point
 
     def reset(self) -> None:
-        self.speed = self.initial_speed
         self.length = 3
         self.direction = Event.RIGHT
         self.is_alive = True
@@ -228,11 +227,12 @@ class Game:
     def play(self, *, speed: int = 20) -> NoReturn:
         terminal.alt_screen_buffer()
         cursor.hide()
-        self.snake.initial_speed = speed
+        self.snake.speed = speed
         self.reset()
         try:
             while True:
-                time.sleep(1 / self.snake.speed)
+                if self.snake.speed:
+                    time.sleep(1 / self.snake.speed)
                 self.handle_event(self.get_event())
                 self.stage.update()
                 if self.snake.length >= self.stage.width * self.stage.height:
