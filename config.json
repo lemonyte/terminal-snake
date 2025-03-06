@@ -1,9 +1,0 @@
-{
-    "snake_speed": 50,
-    "loop": true,
-    "colors": {
-        "empty": "black",
-        "food": "bright_red",
-        "snake": "bright_green"
-    }
-}
