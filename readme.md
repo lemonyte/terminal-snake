@@ -31,7 +31,7 @@ snake [--auto] [--speed <int>]
 ```
 
 The `auto` flag will let the snake control itself.  
-The `speed` option controls the starting speed of the snake in updates per second.
+The `speed` option controls the speed of the game in updates per second. A value of 0 translates to no delay, so the game will run as fast as possible.
 
 ### Controls
 
