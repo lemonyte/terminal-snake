@@ -16,6 +16,7 @@ env/
 *.exe
 [Ll]og*/
 !*.spec
+*.prof
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
